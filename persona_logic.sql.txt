@@ -1,0 +1,36 @@
+-- SQL Persona Logic
+-- Purpose: Assign internal mobility personas for HR strategy analysis
+-- Method: Rule-based segmentation (not predictive)
+-- Usage: Reporting, dashboards, downstream people analytics
+
+WITH base AS (
+  SELECT
+  enrollee_id,
+  target,
+  education_level,
+  training_hours_clean,
+  training_hours_bin,
+  last_job_change_bin_norm,
+
+  CASE
+  WHEN education_level IN ('Graduate', 'Masters', 'Phd') THEN 1
+  ELSE 0
+  END AS higher_education_flag
+FROM train_clean
+),
+personas AS (
+  SELECT
+  *,
+  CASE
+  WHEN last_job_change_bin_norm = '<=1 year'
+  THEN 'Early-Career Explorer'
+  WHEN last_job_change_bin_norm = '2-3 years'
+  THEN 'Mid-Career Plateau Risk'
+  WHEN last_job_change_bin_norm = '4-5 years'
+  THEN 'Anchored Contributor'
+  ELSE 'Not Classified'
+  END AS mobility_persona
+  FROM base
+)
+SELECT *
+FROM personas;
