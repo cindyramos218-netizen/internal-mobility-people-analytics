@@ -38,4 +38,10 @@ Internal mobility is a critical lever for retention and workforce agility, yet *
 ## Tools
 Python, SQL, Tableau Public, PowerPoint
 
+### Tableau Dashboard
+The interactive dashboard was built using Tableau Public and published online.
+A packaged workbook (`.twbx`) is included for reproducibility and review.
+
+Due to Tableau Public limitations, dashboards are published before being downloaded locally.
+
 **Author:** Cindy Ramos
