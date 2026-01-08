@@ -1,5 +1,5 @@
 # Internal Mobility & Workforce Investment Analysis
-Decision-ready peple analytics project analyzing internal mobility patterns using rule-based personas to inform HR and L&D invetment strategy.
+Decision-ready people analytics project examining internal mobility patterns using rule-based personas to inform HR and L&D investment strategy.
 
 ## Executive Summary
 This project analyzes **internal mobility patterns** to answer a core HR leadership question:
@@ -15,7 +15,8 @@ Internal mobility is a critical lever for retention and workforce agility, yet *
 - Rule-based mobility personas grounded in career stage and job-change recency  
 - Training exposure and education layered as risk modifiers  
 - Validation across Python, SQL, and Tableau  
-- Executive dashboard and strategy deck focused on action, not prediction  
+- Executive dashboard and strategy deck focused on action, not prediction
+- Personas validated for size, separation, and decision relevance across alternative cuts
 
 ## Mobility Personas
 - **Early-Career Explorer:** ≤1 year since last job change; highest mobility readiness  
@@ -33,7 +34,7 @@ Internal mobility is a critical lever for retention and workforce agility, yet *
 - Mid-career: lateral moves, role enrichment, manager-led career conversations  
 
 **Maintain (do not expand)**
-- Later-career: sustainability, burnout prevention, knowledge transfer  
+- Anchored Contributor: sustainability, burnout prevention, knowledge transfer  
 
 ## Tools
 Python, SQL, Tableau Public, PowerPoint
